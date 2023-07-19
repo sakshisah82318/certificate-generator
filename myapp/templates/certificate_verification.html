@@ -1,0 +1,11 @@
+<!-- certificate_verification.html -->
+{% if certificate %}
+    <h2>Certificate Verification Result</h2>
+    <p>Certificate Title: {{ certificate.title }}</p>
+    <p>Recipient Name: {{ certificate.recipient_name }}</p>
+    <p>Completion Date: {{ certificate.completion_date }}</p>
+    <!-- Add any additional information or customizations as needed -->
+{% else %}
+    <h2>Invalid Certificate</h2>
+    <p>The provided certificate code is invalid.</p>
+{% endif %}

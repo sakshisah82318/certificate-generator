@@ -1,0 +1,219 @@
+<!-- create_certificate.html -->
+<!-- <form method="POST" action="{% url 'create_certificate' %}">
+    {% csrf_token %}  <!-- Include the CSRF token for form submission security -->
+  
+    <!-- Form fields -->
+    <!-- <label for="title">Certificate Title:</label>
+    <input type="text" name="title" id="title" required>
+  
+    <label for="recipient_name">Recipient Name:</label>
+    <input type="text" name="recipient_name" id="recipient_name" required>
+  
+    <label for="completion_date">Completion Date:</label>
+    <input type="date" name="completion_date" id="completion_date" required>
+   -->
+    <!-- Customization fields -->
+    <!-- <label for="custom_field_1">Custom Field 1:</label>
+    <input type="text" name="custom_field_1" id="custom_field_1">
+  
+    <label for="custom_field_2">Custom Field 2:</label>
+    <input type="text" name="custom_field_2" id="custom_field_2">
+   -->
+    <!-- Submission button -->
+    <!-- <button type="submit">Create Certificate</button>
+  </form> -->
+   
+  <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js" integrity="sha512-gloNJjJNXOqLPOVxOJ/Sg9VN4jSPZpDdEQC+CDP0TczZ6OaOk0Ru1daFEOT/XAJY7fYABwFWVRXOx4HMFr6+lA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <link href="/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+        <link href="/images/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+        <link href="/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+        <link href="/images/icon.png" rel="apple-touch-icon"/>
+        <meta content="1HuWoO6eMS3fJ_KTmafJ7dv1vHNp86jSjKe-jjHSh98" name="google-site-verification"/>
+        <meta content="website" property="og:type"/>
+        <title>Free Online Certificate Generator</title>
+        <meta content="Free Online Certificate Generator" property="og:title"/>
+        <meta content="Generate beautiful certificates for your students or colleagues and download in PDF format" property="og:description"/>
+        <meta content="Generate beautiful certificates for your students or colleagues and download in PDF format" name="description"/>
+        <meta content="summary_large_image" name="twitter:card"/>
+        <meta content="https://www.bannerbear.com/generators/free-online-certificate-generator/" property="og:url"/>
+        <meta content="https://ondemand.bannerbear.com/signedurl/m2GABXJE4PGEzvRwWl/image.jpg?modifications=W3sibmFtZSI6Im9zbG8iLCJpbWFnZV91cmwiOiJodHRwczovL3d3dy5iYW5uZXJiZWFyLmNvbS9pbWFnZXMvb3Nsb19pbGx1c3RyYXRpb25zLzJfY29sbGFib3JhdGlvbl90cmFuc3AucG5nIn0seyJuYW1lIjoidGl0bGUiLCJ0ZXh0IjoiRnJlZSBPbmxpbmUgQ2VydGlmaWNhdGUgR2VuZXJhdG9yIn1d&s=65b936ec26a6c336444f01009e84c9b1aa4c6401d2fb5de3922f7d910db33d76" property="og:image"/>
+        <meta content="https://ondemand.bannerbear.com/signedurl/m2GABXJE4PGEzvRwWl/image.jpg?modifications=W3sibmFtZSI6Im9zbG8iLCJpbWFnZV91cmwiOiJodHRwczovL3d3dy5iYW5uZXJiZWFyLmNvbS9pbWFnZXMvb3Nsb19pbGx1c3RyYXRpb25zLzJfY29sbGFib3JhdGlvbl90cmFuc3AucG5nIn0seyJuYW1lIjoidGl0bGUiLCJ0ZXh0IjoiRnJlZSBPbmxpbmUgQ2VydGlmaWNhdGUgR2VuZXJhdG9yIn1d&s=65b936ec26a6c336444f01009e84c9b1aa4c6401d2fb5de3922f7d910db33d76" name="twitter:image:src"/>
+        <link href='https://d33wubrfki0l68.cloudfront.net/bundles/4fbc22828effe251d34c2db619b3dab3638931d0.css' media='screen,print' rel='stylesheet'/>
+        <script src='https://d33wubrfki0l68.cloudfront.net/js/a8eb99c3a79c1fdcbc92318849b386bd07f08f07/javascripts/cookie.js'></script>
+        <script src='https://d33wubrfki0l68.cloudfront.net/bundles/2ba1ba2be8eb67e1f6c74e861da22568829321fe.js'></script>
+        <script async="true" data-rewardful="5992c4" src="https://r.wdfl.co/rw.js"></script>
+        <link href="https://www.bannerbear.com/generators/free-online-certificate-generator/" rel="canonical"/>
+    </head>
+    <body class="generators generators_free-online-certificate-generator generators_free-online-certificate-generator_index">
+        <div class="global_container">
+            <header>
+                <div class="level is-mobile">
+                    <div class="level-left">
+                        <div class="level-item">
+                            
+                        </div>
+                    </div>
+                    <div class="level-right is-hidden-desktop">
+                        <div class="level-item">
+                            <div class="dropdown is-right is-hoverable">
+                                <div class="dropdown-trigger">
+                                    <div class="hamburger">
+                                        <img class="logo" src="https://d33wubrfki0l68.cloudfront.net/067f5eebf3b84d6f47c6fb4a337f00e76b415a37/b5bd3/images/bars.svg"/>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-content">
+                                        <div class="mobile_dropdown_menu">
+                                            <a class="dropdown-item" href="https://app.bannerbear.com/">Sign In</a>
+                                            <div class="dropdown-divider"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        
+                    </div>
+                </div>
+            </header>
+            <div class="biglayer has_drip fill_white hero">
+                <div class="container">
+                    <div class="container_inner">
+                        <div class="big_text">
+                            <h1>Online Certificate Maker</h1>
+                            <p class="longer">Generate beautiful certificates for your students or colleagues and download in PDF format</p>
+                            <div class="cta">
+                                <a class="bigbutton" href="#generator">Create a Certificate Now</a>
+                            </div>
+                            <div class="checkmarks centered">
+                                <div class="level is-mobile">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            <span class="general_check">&check;</span>
+                                        </div>
+                                        <div class="level-item">
+                                            <span>100% Free &mdash;Download in PDF or JPG</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="biglayer has_drip fill_green">
+                <div class="container">
+                    <div class="container_inner">
+                        <div class="columns is-gapless mobile_spaced">
+                            <div class="column is-half">
+                                <div class="column_inner">
+                                    <div class="column_text">
+                                        <h2>Create Certificates Online </h2>
+                                        <p>Easily create certificates and awards online to recognize the achievements of your employees, speakers, students etc.</p>
+                                        <p>Simply enter some details and generate your certificate PDF in one click.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="column_inner">
+                                    <a href="#generator">
+                                        <img class="thiccborder" src="https://d2vyhi5ouo1we3.cloudfront.net/force_jpg/aHR0cHM6Ly9pbWFnZXMuYmFubmVyYmVhci5jb20vcmVxdWVzdHMvaW1hZ2VzLzAwOC85MjQvNTc5L29yaWdpbmFsL2VhYzQyY2FiZjM5YzIxY2Y4NThlNWY4NDRlZmM0YTA1MjJmOGUxNzkucG5nPzE2MzI4MDgzMDI=/image.jpg"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="biglayer has_drip fill_white">
+                <div class="container">
+                    <div class="container_inner">
+                        <div class="big_text">
+                            <h3>High Quality Templates</h3>
+                            <p>We don't have as many templates as some other tools, but the ones we have look great and are in high quality vector format — download your certificates and print them at high resolutions.</p>
+                            <h3>No Design Skills Needed</h3>
+                            <p>If you're a professional in any field, this is the certificate tool for you. No design skills needed to create stunning certificates of achievement or other documents that represent your awards and achievements.</p>
+                            <h3>Download for Free</h3>
+                            <p>The certificate maker tool is designed as a free way to quickly create and download certificates for anything you want. Create PDFs on your computer, iPad or iPhone - wherever you are, and download them instantly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="biglayer has_drip fill_pink">
+                <div class="container">
+                    <div class="container_inner">
+                        <div class="feature_grid">
+                            <div class="columns is-gapless">
+                                <div class="column">
+                                    <div class="feature">
+                                        <img src="https://d33wubrfki0l68.cloudfront.net/d8b217a2d3ce65fd55f2d6ee88b4b854ffe34e62/de214/images/icons/iconfinder_document-check_266790.png"/>
+                                        <h3>Instant Download</h3>
+                                        <p>Create certificates online and download instantly as a PDF &mdash;no signup or payment required</p>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="feature">
+                                        <img src="https://d33wubrfki0l68.cloudfront.net/7c2c905eb18ba7c6cb7110389000c4f790406d72/9c925/images/icons/iconfinder_expand-2_266778.png"/>
+                                        <h3>Auto Resizing</h3>
+                                        <p>Bannerbear auto-resizes text so you don't have to worry about people with long names</p>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="feature">
+                                        <img src="https://d33wubrfki0l68.cloudfront.net/6c7dbf471d541ebda657020af260ff9e58509fb2/4d4c5/images/icons/iconfinder_settings_430115.png"/>
+                                        <h3>Customization</h3>
+                                        <p>Change certificate settings to your liking such as font colors, font styles and more</p>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="feature">
+                                        <img src="https://d33wubrfki0l68.cloudfront.net/11509d102b1db27322c9a20ae6f03b8099929161/08ef5/images/icons/speak.png"/>
+                                        <h3>Multilingual</h3>
+                                        <p>Certificates support languages such as English, Chinese, Japanese, Arabic and more</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="biglayer has_drip fill_white" id="generator">
+                <div class="container">
+                    <div class="container_inner">
+                        <div class="big_text">
+                            <h2>Create Your Certificate</h2>
+                            <p>Select a template, enter some values and hit Create PDF to get your files</p>
+                            <div class="cta">
+                                <div class="generator_selection">
+                                    <img class="generator_selection_item selected" data-form-id="bMZNWOzvb7gjP3ymG2" src="https://images.bannerbear.com/requests/images/008/924/579/original/eac42cabf39c21cf858e5f844efc4a0522f8e179.png?1632808302"/>
+                                    <img class="generator_selection_item" data-form-id="VKp1JnNjJOKwEXMbqm" src="https://images.bannerbear.com/requests/images/008/925/756/original/170390a0bd96de43dff97995168a7632fe4a98e1.png?1632811033"/>
+                                    <img class="generator_selection_item" data-form-id="DAWQeGdnl2ajBPO562" src="https://images.bannerbear.com/direct/4mGpW3zwrxA1K0AxQw/requests/000/010/382/677/Lvpkalx2D6B5GKMMzWE7rB3Xq/a40521e401ae999872137edffbddcb86aa549737.jpg"/>
+                                    <img class="generator_selection_item" data-form-id="RqzmEldElOpwaybn3K" src="https://images.bannerbear.com/direct/4mGpW3zwrxA1K0AxQw/requests/000/010/384/635/MRj52Zwoa6xWMvB2zxWkdO3eE/85ef4939955b3b1903ddd7cfad60628c61ae00e4.jpg"/>
+                                </div>
+                                <div id="generator_iframe"></div>
+                                <iframe id="form_bMZNWOzvb7gjP3ymG2" src="https://app.bannerbear.com/forms/bMZNWOzvb7gjP3ymG2"></iframe>
+                                <script src="https://cdn.bannerbear.com/iframeResizer.min.js"></script>
+                                <script>
+                                    iFrameResize({}, "#form_bMZNWOzvb7gjP3ymG2")
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        <script src='https://d33wubrfki0l68.cloudfront.net/js/9738c11c0975eca042018ae21eb7c66a511686ff/javascripts/gads.js'></script>
+    </body>
+</html>
